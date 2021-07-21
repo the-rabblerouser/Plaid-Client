@@ -10,7 +10,11 @@ const PlaidNavbar = () => {
 		<>
 			<Navbar collapseOnSelect expand='lg'>
 				<Container>
-					<Navbar.Brand href='#home'>Plaid Practice</Navbar.Brand>
+					<Navbar.Brand>
+						<Link href='/'>
+							<a>Plaid Practice</a>
+						</Link>
+					</Navbar.Brand>
 					<Navbar.Toggle />
 					<Navbar.Collapse className='justify-content-end'>
 						<Nav.Item>
