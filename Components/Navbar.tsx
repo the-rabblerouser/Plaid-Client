@@ -1,15 +1,31 @@
-import React from 'react';
+import Link from 'next/link';
+import React, { useState } from 'react';
 
-const Navbar = () => {
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+
+const PlaidNavbar = () => {
 	return (
 		<>
-			<nav className='navbar navbar-light bg-light'>
-				<div className='container'>
-					<span className='navbar-brand mb-0 h1'>Plaid Practice</span>
-				</div>
-			</nav>
+			<Navbar collapseOnSelect expand='lg'>
+				<Container>
+					<Navbar.Brand href='#home'>Plaid Practice</Navbar.Brand>
+					<Navbar.Toggle />
+					<Navbar.Collapse className='justify-content-end'>
+						<Nav.Item>
+							<Link href='/homePage'>
+								<a className='me-5'>homePage</a>
+							</Link>
+						</Nav.Item>
+						<Navbar.Text>
+							Signed in as: <a href='#login'></a>
+						</Navbar.Text>
+					</Navbar.Collapse>
+				</Container>
+			</Navbar>
 		</>
 	);
 };
 
-export default Navbar;
+export default PlaidNavbar;
