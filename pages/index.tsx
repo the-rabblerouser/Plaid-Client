@@ -30,7 +30,7 @@ export default function Home() {
 					<Carousel.Item>
 						<img
 							className='w-100'
-							style={{ height: '57.2rem' }}
+							style={{ height: '54rem' }}
 							src='./kelly-sikkema-M98NRBuzbpc-unsplash.jpg'
 							alt='First slide'
 						/>
@@ -41,7 +41,7 @@ export default function Home() {
 					<Carousel.Item>
 						<img
 							className='d-block w-100'
-							style={{ height: '57.2rem' }}
+							style={{ height: '54rem' }}
 							src='./neonbrand-4N3iHYmqy_E-unsplash.jpg'
 							alt='Second slide'
 						/>
@@ -54,7 +54,7 @@ export default function Home() {
 					<Carousel.Item>
 						<img
 							className='d-block w-100'
-							style={{ height: '57.2rem' }}
+							style={{ height: '54rem' }}
 							src='./sharon-mccutcheon--8a5eJ1-mmQ-unsplash.jpg'
 							alt='Third slide'
 						/>
@@ -72,12 +72,10 @@ export default function Home() {
 				<h1>Your finances, safe and secure</h1>
 			</div>
 
-			<div
-				className='d-flex justify-content-center mb-5'
-				style={{ height: '20rem', paddingTop: '5rem' }}>
+			<div style={{ height: '30rem', paddingTop: '5rem' }}>
 				<Row>
 					<Col>
-						<Card style={{ width: '18rem', border: 'none' }}>
+						<Card style={{ width: '80%', height: '100%', border: 'none' }}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='65'
@@ -98,7 +96,7 @@ export default function Home() {
 						</Card>
 					</Col>
 					<Col>
-						<Card style={{ width: '18rem', border: 'none' }}>
+						<Card style={{ width: '80%', height: '100%', border: 'none' }}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='65'
@@ -118,7 +116,7 @@ export default function Home() {
 						</Card>
 					</Col>
 					<Col>
-						<Card style={{ width: '18rem', border: 'none' }}>
+						<Card style={{ width: '80%', height: '100%', border: 'none' }}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								width='65'
