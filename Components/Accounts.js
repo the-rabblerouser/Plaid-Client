@@ -11,6 +11,7 @@ const Transactions = () => {
 	return (
 		<>
 			<h1>Accounts</h1>
+			<br />
 			{data &&
 				data.map(({ name }) => {
 					return (
