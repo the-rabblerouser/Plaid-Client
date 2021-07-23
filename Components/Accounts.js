@@ -7,7 +7,7 @@ const Transactions = () => {
 	const { data, error } = useSWR('http://localhost:4000/api/balance', fetcher);
 
 	if (error) return <div>failed to load</div>;
-	if (!data) return <div>loading...</div>;
+	if (!data) return <div>No Accounts Yet</div>;
 	return (
 		<>
 			<h1>Accounts</h1>

@@ -10,7 +10,7 @@ const Transactions = () => {
 	);
 
 	if (error) return <div>failed to load</div>;
-	if (!data) return <div>loading...</div>;
+	if (!data) return <div>No Tranasactions Yet</div>;
 	return (
 		<>
 			<h1>Transactions</h1>
