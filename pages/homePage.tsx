@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import axios from 'axios';
 
 import Nav from 'react-bootstrap/Nav';
@@ -11,6 +12,7 @@ import Accounts from '../Components/Accounts';
 import styles from '../styles/Home.module.css';
 
 const homePage = () => {
+	const router = useRouter();
 	const [linkToken, setLinkToken] = useState(null);
 	const [toggle, setToggle] = useState(true);
 
@@ -31,6 +33,7 @@ const homePage = () => {
 		await axios.post('http://localhost:4000/api/set_access_token', {
 			public_token,
 		});
+		router.reload();
 	};
 
 	return (
